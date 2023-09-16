@@ -1,0 +1,1 @@
+add_llvm_library(demo2 MODULE demo2.cpp)
