@@ -1,0 +1,11 @@
+digraph "Dominator tree for 'main' function" {
+	label="Dominator tree for 'main' function";
+
+	Node0x56107b01ba60 [shape=record,label="{entry}"];
+	Node0x56107b01ba60 -> Node0x56107b01bed0;
+	Node0x56107b01bed0 [shape=record,label="{while.cond}"];
+	Node0x56107b01bed0 -> Node0x56107b01bf30;
+	Node0x56107b01bed0 -> Node0x56107b01bf90;
+	Node0x56107b01bf30 [shape=record,label="{while.body}"];
+	Node0x56107b01bf90 [shape=record,label="{while.end}"];
+}

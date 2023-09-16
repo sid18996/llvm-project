@@ -1,0 +1,23 @@
+digraph "Dominator tree for 'main' function" {
+	label="Dominator tree for 'main' function";
+
+	Node0x562f35a13a60 [shape=record,label="{entry}"];
+	Node0x562f35a13a60 -> Node0x562f35a13ed0;
+	Node0x562f35a13ed0 [shape=record,label="{while.cond}"];
+	Node0x562f35a13ed0 -> Node0x562f35a13f30;
+	Node0x562f35a13ed0 -> Node0x562f35a140b0;
+	Node0x562f35a13f30 [shape=record,label="{while.body}"];
+	Node0x562f35a13f30 -> Node0x562f35a13f90;
+	Node0x562f35a13f30 -> Node0x562f35a13ff0;
+	Node0x562f35a13f30 -> Node0x562f35a14050;
+	Node0x562f35a13f90 [shape=record,label="{if.then}"];
+	Node0x562f35a13ff0 [shape=record,label="{if.end}"];
+	Node0x562f35a14050 [shape=record,label="{if.else}"];
+	Node0x562f35a140b0 [shape=record,label="{while.end}"];
+	Node0x562f35a140b0 -> Node0x562f35a14110;
+	Node0x562f35a14110 [shape=record,label="{while.cond8}"];
+	Node0x562f35a14110 -> Node0x562f35a14170;
+	Node0x562f35a14110 -> Node0x562f35a141d0;
+	Node0x562f35a14170 [shape=record,label="{while.body10}"];
+	Node0x562f35a141d0 [shape=record,label="{while.end14}"];
+}

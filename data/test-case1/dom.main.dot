@@ -1,0 +1,11 @@
+digraph "Dominator tree for 'main' function" {
+	label="Dominator tree for 'main' function";
+
+	Node0x5572994aea60 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  %num = alloca i32, align 4\l  store i32 0, i32* %retval, align 4\l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([19 x i8],\l... [19 x i8]* @.str, i64 0, i64 0))\l  %call1 = call i32 (i8*, ...) @__isoc99_scanf(i8* getelementptr inbounds ([3\l... x i8], [3 x i8]* @.str.1, i64 0, i64 0), i32* %num)\l  %0 = load i32, i32* %num, align 4\l  %rem = srem i32 %0, 2\l  %cmp = icmp eq i32 %rem, 0\l  br i1 %cmp, label %if.then, label %if.else\l}"];
+	Node0x5572994aea60 -> Node0x5572994aeed0;
+	Node0x5572994aea60 -> Node0x5572994aef30;
+	Node0x5572994aea60 -> Node0x5572994aef90;
+	Node0x5572994aeed0 [shape=record,label="{if.then:                                          \l  %1 = load i32, i32* %num, align 4\l  %call2 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([12 x i8],\l... [12 x i8]* @.str.2, i64 0, i64 0), i32 %1)\l  br label %if.end\l}"];
+	Node0x5572994aef30 [shape=record,label="{if.end:                                           \l  ret i32 0\l}"];
+	Node0x5572994aef90 [shape=record,label="{if.else:                                          \l  %2 = load i32, i32* %num, align 4\l  %call3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8],\l... [11 x i8]* @.str.3, i64 0, i64 0), i32 %2)\l  br label %if.end\l}"];
+}
